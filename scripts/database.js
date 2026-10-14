@@ -1,17 +1,37 @@
 
 const database = {
 
-    ships: [{
+    ships: [
+        {
 
-    }]
+        }
+    ]
     ,
-    haulers: [{
+    haulers: [
+        {
         
-    }]
+        }
+    ]
     ,
-    docks: [{
-        
-    }]
+    docks: [
+        {
+            id: 1,
+            location: "Shanghai, China",
+            capacity: "43.5"
+        }, {
+            id: 2,
+            location: "Busan, South Korea",
+            capacity: "21.6"
+        }, {
+            id: 3,
+            location: "Rotterdam, The Netherlands",
+            capacity: "14.35"
+        }, {
+            id: 4,
+            location: "Antwerp, Belgium",
+            capacity: "12.04"
+        }
+    ]
 }
 
 
