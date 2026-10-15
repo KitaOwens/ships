@@ -20,7 +20,7 @@ const database = {
             haulerId: 1
         },{
             id: 5,
-            shipName: "Ever Ave",
+            shipName: "Ever Ace",
             haulerId: 4
         },{
             id: 6,
@@ -36,12 +36,12 @@ const database = {
             haulerId: 2
         },{
             id: 9,
-            shipName: "Chapms Sporting Goods",
+            shipName: "Champs Sporting Goods",
             haulerId: 1
         },{
             id: 10,
             shipName: "Praline",
-            haulerId: 1
+            haulerId: 5
         },{
             id: 11,
             shipName: "MSG",

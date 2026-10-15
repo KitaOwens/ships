@@ -1,25 +1,28 @@
-import {getHaulers} from "./database.js"
-
+import {getHaulers,getShips} from "./database.js"
 
 
 document.addEventListener(
     "click",
         (onClick) => {
-            const itemClicked = onClick.target
+            const clickedItem = onClick.target
 
-        // Was a hauler list item clicked?
+            let counter = 0
 
-            // Get the id of the hauler clicked
+            let hauledShipsNames = []
 
-            // Start a counter variable at 0
-
-            // Iterate all of the shipping ships
-
-                // Does the haulerId foreign key match the id?
-
-                    // Increase the counter by 1
-
-    }
+            let ships = getShips()
+            for (let ship of ships) {
+                if (ship.haulerId === Number(clickedItem.dataset.id)) {
+                    hauledShipsNames.push(ship.shipName)
+                    counter ++
+                }
+            }
+            if (clickedItem.dataset.type === "hauler") {
+                window.alert(
+                    `Hauler ${clickedItem.dataset.name} is hauling ${counter} ships: ${hauledShipsNames.join(", ")}`
+                )
+            }
+        }
 )
 
 
@@ -30,9 +33,10 @@ export const haulerList = () => {
 
     for (const hauler of haulers) {
         haulersHTML += `<li
+            data-type="hauler"
             data-id="${hauler.id}"
             data-name="${hauler.haulerName}"
-            data-dock="${hauler.dockID}"
+            data-dock="${hauler.dockId}"
             >
             ${hauler.haulerName}
         </li>`

@@ -8,6 +8,7 @@ export const dockList = () => {
 
     for (const dock of docks) {
         docksHTML += `<li
+            data-type="dock"
             data-id="${dock.id}"
             data-location="${dock.location}"
             data-capacity="${dock.capacity}"

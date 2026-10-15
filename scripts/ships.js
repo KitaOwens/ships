@@ -8,6 +8,7 @@ export const shipList = () => {
 
     for (const ship of ships) {
         shipsHTML += `<li
+            data-type="ship"
             data-id="${ship.id}"
             data-shipname="${ship.shipName}"
             data-haulerid="${ship.haulerId}"
