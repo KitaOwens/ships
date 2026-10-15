@@ -18,6 +18,38 @@ const database = {
             id: 4,
             shipName: "Metalera",
             haulerId: 1
+        },{
+            id: 5,
+            shipName: "Ever Ave",
+            haulerId: 4
+        },{
+            id: 6,
+            shipName: "Ravioli",
+            haulerId: 3
+        },{
+            id: 7,
+            shipName: "Sylvan Esso",
+            haulerId: 2
+        },{
+            id: 8,
+            shipName: "Nissan Murano",
+            haulerId: 2
+        },{
+            id: 9,
+            shipName: "Chapms Sporting Goods",
+            haulerId: 1
+        },{
+            id: 10,
+            shipName: "Praline",
+            haulerId: 1
+        },{
+            id: 11,
+            shipName: "MSG",
+            haulerId: 2
+        },{
+            id: 12,
+            shipName: "Rotting Ham",
+            haulerId: 1
         }
     ],
 
@@ -29,7 +61,7 @@ const database = {
         },{
             id: 2,
             haulerName: "Silverhair",
-            dockId: 3
+            dockId: 2
         },{
             id: 3,
             haulerName: "Gojima",
@@ -38,6 +70,14 @@ const database = {
             id: 4,
             haulerName: "Nan Halen",
             dockId: 1
+        },{
+            id: 5,
+            haulerName: "Black Sabbathwater",
+            dockId: 4
+        },{
+            id: 6,
+            haulerName: "Cannibal Corps of Engineers",
+            dockId: 4
         }
     ],
 
@@ -61,24 +101,6 @@ const database = {
         }
     ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
