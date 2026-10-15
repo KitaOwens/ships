@@ -3,16 +3,44 @@ const database = {
 
     ships: [
         {
-
+            id: 1,
+            shipName: "Pioneering Spirit",
+            haulerId: 4
+        },{
+            id: 2,
+            shipName: "Boaty McBoatface",
+            haulerId: 3
+        },{
+            id: 3,
+            shipName: "Seawise Giant",
+            haulerId: 2
+        },{
+            id: 4,
+            shipName: "Metalera",
+            haulerId: 1
         }
-    ]
-    ,
+    ],
+
     haulers: [
         {
-        
+            id: 1,
+            haulerName: "Iron Matron",
+            dockId: 4
+        },{
+            id: 2,
+            haulerName: "Silverhair",
+            dockId: 3
+        },{
+            id: 3,
+            haulerName: "Gojima",
+            dockId: 2
+        },{
+            id: 4,
+            haulerName: "Nan Halen",
+            dockId: 1
         }
-    ]
-    ,
+    ],
+
     docks: [
         {
             id: 1,
