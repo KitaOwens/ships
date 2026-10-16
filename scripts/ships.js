@@ -1,5 +1,25 @@
-import {getShips} from "./database.js"
+import {getShips,getHaulers} from "./database.js"
 
+
+const haulers = getHaulers()
+
+document.addEventListener (
+    "click",
+        (onClick) => {
+            const clickedItem = onClick.target
+            if (clickedItem.dataset.type === "ship") {
+                const haulerId = parseInt(clickedItem.dataset.haulerid)
+                const shipHaulers = haulers.filter(
+                    (hauler) => hauler.id === haulerId
+                )
+                const haulerNames = shipHaulers.map((hauler) => hauler.haulerName
+                )
+                window.alert(
+                    `${clickedItem.dataset.shipname} is being hauled by ${haulerNames}.`
+                )
+            }
+        }
+)
 
 export const shipList = () => {
     const ships = getShips()
